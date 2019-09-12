@@ -184,22 +184,22 @@ SessionCounter,
 CategoryResurces = true;
 
 if (typeof(window.localStorage) !== "undefined") {
-    browserdoeslocalstorage == "Great, your Browser does support games save function!",
+    browserdoeslocalstorage == 'Great, your Browser does support games save function!',
     document.getElementById("savefunction").innerHTML = browserdoeslocalstorage;
 } else {
-    browserdoeslocalstorage == "Oh nno, your Browser does not support games save function!",
+    browserdoeslocalstorage == 'Oh no, your Browser does not support games save function!',
     document.getElementById("savefunction").innerHTML = browserdoeslocalstorage;
 }
 CountSession();
     counter();
 
 function counter() {
-    if (SessionCounter >= 0) {
-        SessionCounter = SessionCounter + 1;
+    if (SessionCounter > 0) {
+        SessionCounter = SessionCounter + 1
         document.getElementById("sessions").innerHTML = SessionCounter;
     }
     else {
-        SessionCounter = 0,
+        SessionCounter = 0
             CountSession();
     }
 }
