@@ -1,0 +1,23 @@
+body {
+    background-color: #19171c;
+    color: white;
+}
+
+#title {
+    text-align: center;
+    font-size: 25px;
+}
+
+#build {
+    text-align: center;
+    font-size: 25px;
+}
+
+#updates {
+    text-align: center;
+    font-size: 25px;
+}
+
+#sessions {
+    text-align: center
+}
