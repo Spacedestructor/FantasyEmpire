@@ -4,280 +4,222 @@ var Mega = "https://mega.nz/#F!StxWBKLI!gl8h8d8vzIEyu1qHU1zrXQ";
 var Space = {
     Name:'Space',
     Total:1000,
-    Click:1000,
-    Second:0,
-    Max:1000
+    Click:0,
+    Second:0
 },
 Grain = {
     Name:'Grain',
     Total:0,
     Click:1,
-    Second:0,
-    Max:1000
+    Second:0
 },
 Wood = {
     Name:'wood',
     Total:0,
     Click:1,
-    Second:0,
-    Max:1000
+    Second:0
 },
 Stone = {
     Name:'Stone',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:1000
+    Click:0,
+    Second:0
 },
 Coal = {
     Name:'Coal',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:1000
+    Click:0,
+    Second:0
 },
 Iron = {
     Name:'Iron',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:1000
+    Click:0,
+    Second:0
 },
 Gold = {
     Name:'Gold',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:100
+    Click:0,
+    Second:0
 },
 Knowledge = {
     Name:'Knowledge',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:1000
+    Click:0,
+    Second:0
 },
 Synthe = {
     Name:'Synthe',
     Total:1,
     Click:1,
-    Second:0,
-    Max:1000,
+    Second:0
 },
 Axe = {
     Name:'Axe',
     Total:1,
     Click:1,
-    Second:0,
-    Max:1000,
+    Second:0
 },
 Pickaxe = {
     Name:'Pickaxe',
-    Total:1,
-    Click:1,
-    Second:0,
-    Max:1000
+    Total:0,
+    Click:0,
+    Second:0
 },
 Hammer = {
     Name:'Hammer',
-    Total:1,
-    Click:1,
-    Second:0,
-    Max:1000
+    Total:0,
+    Click:0,
+    Second:0
 },
 Sword = {
     Name:'Sword',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:1000
+    Click:0,
+    Second:0
 },
 Book = {
     Name:'Book',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:1000
-},
-Population = {
-    Name:'Population',
-    Total:0,
     Click:0,
-    Second:0,
-    Max:1000
+    Second:0
 },
 House = {
     Name:'House',
     Total:0,
-    Click:1,
+    Click:0,
     Second:0
 },
 Farm = {
     Name:'Farm',
     Total:0,
-    Click:1,
+    Click:0,
     Second:0
 },
 Lumbercamp = {
     Name:'Lumbercamp',
     Total:0,
-    Click:1,
+    Click:0,
     Second:0
 },
 Mine = {
     Name:'Mine',
     Total:0,
-    Click:1,
+    Click:0,
     Second:0
 },
 Castle = {
     Name:'Castle',
     Total:0,
-    Click:1,
+    Click:0,
     Second:0
 },
 Barracks = {
     Name:'Barracks',
     Total:0,
-    Click:1,
+    Click:0,
     Second:0,
 },
 Library = {
     Name:'Library',
     Total:0,
-    Click:1,
+    Click:0,
+    Second:0
+},
+StorageBuilding = {
+    Name:'Storage',
+    Total:0,
+    Click:0,
+    Second:0
+},
+Population = {
+    Name:'Population',
+    Total:0,
+    Click:0,
     Second:0
 },
 Farmer = {
     Name:'Farmer',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 Woodcutter = {
     Name:'Woodcutter',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 Miner = {
     Name:'Miner',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 Blacksmith = {
     Name:'Blacksmith',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 Wiseman = {
     Name:'Wiseman',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 Scout = {
     Name:'Scout',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 Knight = {
     Name:'Knight',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 General = {
     Name:'General',
     Total:0,
-    Click:1,
-    Second:0,
-    Max:0
+    Click:0,
+    Second:0
 },
 EmpireStorage = {
     Name:'Empire Storage',
     Total:1000,
-    Click:1000,
+    Click:0,
     Second:0
 },
-browserdoeslocalstorage,
 SessionCounter,
-CategoryResurces = true;
-
-if (typeof(window.localStorage) !== "undefined") {
-    browserdoeslocalstorage == "Great, your Browser does support games save function!",
-    document.getElementById("savefunction").innerHTML = browserdoeslocalstorage;
-} else {
-    browserdoeslocalstorage == "Oh no, your Browser does not support games save function!",
-    document.getElementById("savefunction").innerHTML = browserdoeslocalstorage;
-}
-CountSession(); {
-    counter();
-}
-
-//function bake_cookie(name, value) {
-//	var exdate=new Date();
-//	exdate.setDate(exdate.getDate() + 30);
-//	var cookie = [name, '=', JSON.stringify(value),'; expires=.', exdate.toUTCString(), '; domain=.', window.location.host.toString(), '; path=/;'].join('');
-//	document.cookie = cookie;
-//}
-
-function Save() {
-localStorage.setItem()
-}
-
-function counter() {
-    if (SessionCounter >= 0) {
-        SessionCounter = SessionCounter + 1;
-        document.getElementById("sessions").innerHTML = SessionCounter;
-    }
-    else {
-        SessionCounter = 0,
-            CountSession();
-    }
-}
-
-function Preset(){
-    Space = {
-        Total:1000,
-        Click:1000,
-        Second:0,
-        Max:1000
-    },
-    Grain = {
-        Total:0,
-        Click:1,
-        Second:0,
-        Max:1000
-    },
-    Wood = {
-        Total:0,
-        Click:1,
-        Second:0,
-        Max:1000
-    },
+Category = 'Overview',
+Saved = {
+    SaveRessurces,
+    SaveUpgrades,
+    SaveBuildings,
+    SavePopulation
+},
+SaveRessurces = {
+    Space,
+    Grain,
+    Wood,
     Stone,
     Coal,
     Iron,
     Gold,
-    Knowledge,
+    Knowledge
+},
+SaveUpgrades = {
     Synthe,
     Axe,
     Pickaxe,
     Hammer,
     Sword,
-    Book,
-    Population,
+    Book
+},
+SaveBuildings = {
     House,
     Farm,
     Lumbercamp,
@@ -285,6 +227,10 @@ function Preset(){
     Castle,
     Barracks,
     Library,
+    StorageBuilding
+},
+SavePopulation = {
+    Population,
     Farmer,
     Woodcutter,
     Miner,
@@ -293,15 +239,256 @@ function Preset(){
     Scout,
     Knight,
     General
+};
+
+function counter() {
+    localStorage.getItem('SessionCounter', SessionCounter)
+    if (SessionCounter = 0) {
+        SessionCounter = SessionCounter + 1
+        document.getElementById("sessions").innerHTML = SessionCounter,
+        localStorage.setItem('SessionCounter', SessionCounter);
+    } else {
+        if (SessionCounter > 0) {
+            
+        } else {
+            SessionCounter = 0,
+            localStorage.setItem('SessionCounter', SessionCounter),
+            counter();
+        }
+    }
 }
 
-//function SwitchCategory(){
-//}
+function Save() {
+localStorage.setItem('SavedRessurces', SaveRessurces)
+}
+
+function Preset(){
+    Space = {
+        Name:'Space',
+        Total:1000,
+        Click:0,
+        Second:0
+    },
+    Grain = {
+        Name:'Grain',
+        Total:0,
+        Click:1,
+        Second:0
+    },
+    Wood = {
+        Name:'wood',
+        Total:0,
+        Click:1,
+        Second:0
+    },
+    Stone = {
+        Name:'Stone',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Coal = {
+        Name:'Coal',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Iron = {
+        Name:'Iron',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Gold = {
+        Name:'Gold',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Knowledge = {
+        Name:'Knowledge',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Synthe = {
+        Name:'Synthe',
+        Total:1,
+        Click:1,
+        Second:0
+    },
+    Axe = {
+        Name:'Axe',
+        Total:1,
+        Click:1,
+        Second:0
+    },
+    Pickaxe = {
+        Name:'Pickaxe',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Hammer = {
+        Name:'Hammer',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Sword = {
+        Name:'Sword',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Book = {
+        Name:'Book',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    House = {
+        Name:'House',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Farm = {
+        Name:'Farm',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Lumbercamp = {
+        Name:'Lumbercamp',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Mine = {
+        Name:'Mine',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Castle = {
+        Name:'Castle',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Barracks = {
+        Name:'Barracks',
+        Total:0,
+        Click:0,
+        Second:0,
+    },
+    Library = {
+        Name:'Library',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    StorageBuilding = {
+        Name:'Storage',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Population = {
+        Name:'Population',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Farmer = {
+        Name:'Farmer',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Woodcutter = {
+        Name:'Woodcutter',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Miner = {
+        Name:'Miner',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Blacksmith = {
+        Name:'Blacksmith',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Wiseman = {
+        Name:'Wiseman',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Scout = {
+        Name:'Scout',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    Knight = {
+        Name:'Knight',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    General = {
+        Name:'General',
+        Total:0,
+        Click:0,
+        Second:0
+    },
+    EmpireStorage = {
+        Name:'Empire Storage',
+        Total:1000,
+        Click:0,
+        Second:0
+    },
+    SessionCounter,
+    CategoryResurces = true
+};
+
+function SelectCategory(Category){
+    if (Category == 'Overview') {
+        document.getElementById('Buttons').innerHTML = {
+
+        }
+    }
+    if (Category == 'Ressurces') {
+
+    }
+    if ( Category == 'Upgrades') {
+
+    }
+    if (Category == 'Buildings') {
+
+    }
+    if (Category == 'Population') {
+
+    }
+}
 
 function HarvestGrain(){
     if (Grain.Total + Synthe.Total < Grain.Max){
         Grain.Total = Grain.Total + Synthe.Total
         document.getElementById("Grain").innerHTML = Grain.Total;
+    } else {
+        var count = 0,
+        while (Grain.Total < Grain.Max && count < Synthe.Total) {
+        Grain.Total = Grain.Total + 1,
+        count = count + 1;
+        }
     }
 }
 
@@ -309,6 +496,12 @@ function CollectWood(){
     if (Wood.Total + Axe.Click < Wood.Max){
         Wood.Total = Wood.Total + Axe.Click
         document.getElementById("Wood").innerHTML = Wood.Total;
+    } else {
+        var count = 0,
+        while (Wood.Total < Wood.Max && count < Axe.Total) {
+            Wood.Total = Wood.Total + 1,
+            count = count + 1;
+        }
     }
 }
 
@@ -372,3 +565,5 @@ function BuildMine(){
     MaxMiner = MaxMiner + 10
     document.getElementById("Mine").innerHTML = Mine;
 }
+
+onload: (this.window), counter();
