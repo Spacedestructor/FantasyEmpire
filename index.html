@@ -6,53 +6,59 @@
     </head>
     <body>
         <script type="text/javascript" src="main.js"></script>
-        <section id="title">Idle Empire is a idle clicker Game developed by <a href="https://www.twitter.com/spacedestructor" target="_blank">Spacedestructor</a></section>
-        <section>Current Build: <span id="build">"Experimantal 1"</span></section>
-        <section>Sessions: <span id="sessions">0</span></section>
-        <section>Save check:<span id="savefunction"></span></section>
-        <section>
-            <button onclick="Save()">Save</button>
-            <button onclick="Load()">Load</button>
-            <button onclick="Reset()">Reset</button></section>
-        <section>
-            <button id="CategoryRessurces">Ressurces</button>
-            <button id="CategoryBuildings">Buildings</button>
-            <button id="CategoryPopulation">Population</button>
+        <section id="title1">Idle Empire is a idle clicker Game</section>
+        <section id="title2">developed by <a id='DevTwitter' href="https://www.twitter.com/spacedestructor" target="_blank">Spacedestructor</a></section>
+        <section id="build">Current Build: <span>"Experimantal 2"</span></section>
+        <section id="sessions">Sessions: <span>0</span></section>
+        <section id='Buttons'>
+            <section id='ButtonsSaves'>
+                <button onclick="Save()">Save</button>
+                <button onclick="Load()">Load</button>
+                <button onclick="Reset()">Reset</button>
+            </section>
+            <section id='ButtonsCategorys'>
+                <button id='Overview' onclick="SelectCategory('Overview')">Overview</button>
+                <button id="CategoryRessurces" onclick="SelectCategory('Ressurces')">Ressurces</button>
+                <button id='CategoryUpgrades' onclick="SelectCategory('Upgrades')">Upgrades</button>
+                <button id="CategoryBuildings" onclick="SelectCategory('Buildings')">Buildings</button>
+                <button id="CategoryPopulation" onclick="SelectCategory('Population')">Population</button>
+            </section>
+            <section id='ButtonsRessurces'>
+                <button onclick="HarvestGrain()">Harvest Grain</button>
+                <button onclick="CollectWood()">Collect Wood</button>
+                <button onclick="MineStone()">Mine Stone</button>
+                <button onclick="MineIron()">Mine Iron</button>
+                <button onclick="MineGold()">Mine Gold</button>
+            </section>
+        <section id='Buildings'>
+            <button onclick="BuildHouse()">Build House</button>
         </section>
-        <section>
-            <button onclick="HarvestGrain()">Harvest Grain</button>
-            <button onclick="CollectWood()">Collect Wood</button>
-            <button onclick="MineStone()">Mine Stone</button>
-            <button onclick="MineIron()">Mine Iron</button>
-            <button onclick="MineGold()">Mine Gold</button>
-        </section>
-        <section>
+        <section id='Upgrades'>
             <button onclick="IncreaseFarmer()">Increase Farmer</button>
             <button onclick="UpgradeSynthe()">Upgrade Synthe</button>
             <button onclick="UpgradeAxe()">Upgrade Axe</button>
             <button onclick="UpgradePickaxe()">Upgrade Pickaxe</button>
         </section>
-        <section>
-            <button onclick="BuildHouse()">Build House</button>
         </section>
-        <section><span id="RessurceWarning"></span></section>
-        <section><span>Ressurces:</span></section>
-        <section>Grain: <span id="Grain">0</span></section>
-        <section>Wood: <span id="Wood">0</span></section>
-        <section>Stone: <span id="Stone">0</span></section>
-        <section>Iron: <span id="Iron">0</span></section>
-        <section>Gold: <span id="Gold">0</span></section>
-        <section>Upgrades:</section>
-        <section>Synthe Level <span id="Synthe">1</span></section>
-        <section>Axe Level <span id="Axe">1</span></section>
-        <section>Pickaxe Level <span id="Pickaxe">1</span></section>
-        <section>Buildings:</section>
-        <section>Houses: <span id="House">0</span><span></span></section>
-        <section>Worker:</section>
-        <section>Farmer: <span id="Farmer">0</span> / <span id="MaxFarmer">0</span></section>
-        <section>Woodcutter:<span id="Woodcutter">0</span> / <span id="MaxWoodcutter">0</span></section>
-        <section>Miner: <span id="Miner">0</span> / <span id="MaxMiner">0</span></section>
-        <section>Blacksmith: <span id="Blacksmith">0</span> / <span id= "MaxBlacksmith">0</span></section>
-        <section>Wiseman: <span id="Wiseman">0</span> / <span id="MaxWiseman">0</span></section>
+        <section id='Display'>
+            <section><span>Ressurces:</span></section>
+            <section>Grain: <span id="Grain">0</span></section>
+            <section>Wood: <span id="Wood">0</span></section>
+            <section>Stone: <span id="Stone">0</span></section>
+            <section>Iron: <span id="Iron">0</span></section>
+            <section>Gold: <span id="Gold">0</span></section>
+            <section>Upgrades:</section>
+            <section>Synthe Level <span id="Synthe">1</span></section>
+            <section>Axe Level <span id="Axe">1</span></section>
+            <section>Pickaxe Level <span id="Pickaxe">0</span></section>
+            <section>Buildings:</section>
+            <section>Houses: <span id="House">0</span><span></span></section>
+            <section>Worker:</section>
+            <section>Farmer: <span id="Farmer">0</span> / <span id="MaxFarmer">0</span></section>
+            <section>Woodcutter:<span id="Woodcutter">0</span> / <span id="MaxWoodcutter">0</span></section>
+            <section>Miner: <span id="Miner">0</span> / <span id="MaxMiner">0</span></section>
+            <section>Blacksmith: <span id="Blacksmith">0</span> / <span id= "MaxBlacksmith">0</span></section>
+            <section>Wiseman: <span id="Wiseman">0</span> / <span id="MaxWiseman">0</span></section>
+        </section>
     </body>
 </html>
