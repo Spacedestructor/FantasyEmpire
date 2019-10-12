@@ -25,3 +25,40 @@ body {
 #sessions {
     text-align: center;
 }
+
+#Ressurces {
+    position: absolute;
+    border: 5px solid grey;
+    margin: auto;
+    max-height: 100px;
+    min-width: 65px;
+    left: 0px;
+    max-width: 100%;
+}
+
+#Upgrades {
+    position: absolute;
+    border: 5px solid grey;
+    margin: auto;
+    max-height: 100px;
+    min-width: 65px;
+    max-width: 100%;
+}
+
+#Buildings {
+    position: absolute;
+    border: 5px solid grey;
+    margin: auto;
+    max-height: 100px;
+    min-width: 65px;
+    max-width: 100%;
+}
+
+#Population {
+    position: absolute;
+    border: 5px solid grey;
+    margin: auto;
+    max-height: 100px;
+    min-width: 65px;
+    max-width: 100%;
+}
