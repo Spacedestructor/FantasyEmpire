@@ -5,32 +5,87 @@
         <link rel="stylesheet" type="text/css" href="interface.css" />
     </head>
     <body>
+        <script type="text/javascript" src="buildings.js"></script>
         <script type="text/javascript" src="main.js"></script>
+        <script tytpe="text/javascript" src="population.js"></script>
+        <script type="text/javascript" src="ressources.js"></script>
+        <script type="text/javascript" src="saves.js"></script>
         <section id="title1">Fantasy Empire is a idle clicker Game</section>
         <section id="title2">developed by <a id='DevTwitter' href="https://www.patreon.com/spacedestructor" target="_blank">Spacedestructor</a></section>
         <section id="build">Current Build: <span>"Experimantal 2"</span></section>
-        <section id="sessions">Sessions: <span>0</span></section>
+        <section>Sessions: <span id="sessions">0</span></section>
         <section id="Buttons">
-            <section id='ControlButtons'>
-                <button id='SaveButton' onclick="Save()">Save</button>
-                <button id='LoadButton' onclick="Load()">Load</button>
-                <button id='ResetButton' onclick="Reset()">Reset</button>
+        <table>
+            <tr>
+                <td>
+                    Settings Buttons
+                </td>
+                <td>
+                    Ressurce Buttons
+                </td>
+                <td>
+                    Building Buttons
+                </td>
+                <td>
+                    Upgrade Buttons
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id='SaveButton' onclick="Save()">Save</button>
+                </td>
+                <td>
+                    <button id="HarvestGrainButton" onclick="HarvestGrain()">Harvest Grain</button>
+                </td>
+                <td>
+                    <button onclick="BuildHouse()">Build House</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id='LoadButton' onclick="Load()">Load</button>
+                </td>
+                <td>
+                    <button onclick="CollectWood()">Collect Wood</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id='ResetButton' onclick="Reset()">Reset</button>
+                </td>
+                <td>
+                    <button id="GainStoneButton" onclick="MineStone()">Mine Stone</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="MineIron()">Mine Iron</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="MineGold()">Mine Gold</button>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button onclick="MineCoal()">Mine Coal</button>
+                </td>
+            </tr>
+        </table>
+            <section>
+                <button id='FarmerButton' onclick="IncreaseFarmer()">Increase Farmer</button>
             </section>
-            <section id="CategoryButtons">
-                <button id='OverviewButton' onclick="SelectOverview()">Overview</button>
-                <button id="RessurceButton" onclick="SelectRessurces()">Ressurces</button>
-                <button id='UpgradeButton' onclick="SelectUpgrades()">Upgrades</button>
-                <button id="BuildingButton" onclick="SelectBuildings()">Buildings</button>
-                <button id="PopulationButton" onclick="SelectPopulation()">Population</button>
+            <section id='ButtonsUpgrades'>
+                <button id='SyntheButton' onclick="UpgradeSynthe()">Upgrade Synthe</button>
+                <button id='AxeButton' onclick="UpgradeAxe()">Upgrade Axe</button>
+                <button id='PickaxeButton' onclick="UpgradePickaxe()">Upgrade Pickaxe</button>
             </section>
-            <section id='RessurceButtons'><button onclick="HarvestGrain()">Harvest Grain</button><button onclick="CollectWood()">Collect Wood</button><button onclick="MineStone()">Mine Stone</button><button onclick="MineIron()">Mine Iron</button><button onclick="MineGold()">Mine Gold</button><button onclick="MineCoal()">Mine Coal</button></section>
-            <section id='BuildingButtons'>
-                <span id='HouseButton'><button onclick="BuildHouse()">Build House</button></span>
-            </section>
-            <section><button id='FarmerButton' onclick="IncreaseFarmer()">Increase Farmer</button></section>
-            <section id='ButtonsUpgrades'><button id='SyntheButton' onclick="UpgradeSynthe()">Upgrade Synthe</button><button id='AxeButton' onclick="UpgradeAxe()">Upgrade Axe</button><button id='PickaxeButton' onclick="UpgradePickaxe()">Upgrade Pickaxe</button></section>
-        </section>
-        <section id='Display'>
+            <div id="CenterWindow">
+                <span>Main Screen</span>
                 <section>Grain: <span id="Grain">0</span></section>
                 <section>Wood: <span id="Wood">0</span></section>
                 <section>Stone: <span id="Stone">0</span></section>
@@ -46,6 +101,6 @@
                 <section>Miner: <span id="Miner">0</span> / <span id="MaxMiner">0</span></section>
                 <section>Blacksmith: <span id="Blacksmith">0</span> / <span id= "MaxBlacksmith">0</span></section>
                 <section>Wiseman: <span id="Wiseman">0</span> / <span id="MaxWiseman">0</span></section>
-        </section>
+            </div>
     </body>
 </html>
