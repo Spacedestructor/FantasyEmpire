@@ -2,14 +2,16 @@
 <html>
     <head>
         <meta charset="UFT-8">
-        <link rel="stylesheet" type="text/css" href="interface.css" />
+        <link rel="stylesheet" type="text/css" href="style/interface.css" />
     </head>
     <body>
-        <script type="text/javascript" src="buildings.js"></script>
-        <script type="text/javascript" src="main.js"></script>
-        <script tytpe="text/javascript" src="population.js"></script>
-        <script type="text/javascript" src="ressources.js"></script>
-        <script type="text/javascript" src="saves.js"></script>
+        <script type="text/javascript" src="scripts/stitch.js"></script>
+        <script type="text/javascript" src="scripts/buildings.js"></script>
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script tytpe="text/javascript" src="scripts/population.js"></script>
+        <script type="text/javascript" src="scripts/ressources.js"></script>
+        <script type="text/javascript" src="scripts/saves.js"></script>
+        <script type="text/javascript" src="scripts/training.js.js"></script>
         <section id="title1">Fantasy Empire is a idle clicker Game</section>
         <section id="title2">developed by <a id='DevTwitter' href="https://www.patreon.com/spacedestructor" target="_blank">Spacedestructor</a></section>
         <section id="build">Current Build: <span>"Experimantal 2"</span></section>
@@ -29,6 +31,9 @@
                 <td>
                     Upgrade Buttons
                 </td>
+                <td>
+                    Population Buttons
+                </td>
             </tr>
             <tr>
                 <td>
@@ -40,6 +45,12 @@
                 <td>
                     <button onclick="BuildHouse()">Build House</button>
                 </td>
+                <td>
+                    <button id='SyntheButton' onclick="UpgradeSynthe()">Upgrade Synthe</button>
+                </td>
+                <td>
+                    <button id='FarmerButton' onclick="IncreaseFarmer()">Increase Farmer</button>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -47,6 +58,15 @@
                 </td>
                 <td>
                     <button onclick="CollectWood()">Collect Wood</button>
+                </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    <button id='AxeButton' onclick="UpgradeAxe()">Upgrade Axe</button>
+                </td>
+                <td>
+                    Empty
                 </td>
             </tr>
             <tr>
@@ -56,34 +76,69 @@
                 <td>
                     <button id="GainStoneButton" onclick="MineStone()">Mine Stone</button>
                 </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    <button id='PickaxeButton' onclick="UpgradePickaxe()">Upgrade Pickaxe</button>
+                </td>
+                <td>
+                    Empty
+                </td>
             </tr>
             <tr>
-                <td></td>
+                <td>
+                    Empty
+                </td>
                 <td>
                     <button onclick="MineIron()">Mine Iron</button>
                 </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    Empty
+                </td>
             </tr>
             <tr>
-                <td></td>
+                <td>
+                    Empty
+                </td>
                 <td>
                     <button onclick="MineGold()">Mine Gold</button>
                 </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    Empty
+                </td>
             </tr>
             <tr>
-                <td></td>
+                <td>
+                    Empty
+                </td>
                 <td>
                     <button onclick="MineCoal()">Mine Coal</button>
                 </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    Empty
+                </td>
+                <td>
+                    Empty
+                </td>
             </tr>
         </table>
-            <section>
-                <button id='FarmerButton' onclick="IncreaseFarmer()">Increase Farmer</button>
-            </section>
-            <section id='ButtonsUpgrades'>
-                <button id='SyntheButton' onclick="UpgradeSynthe()">Upgrade Synthe</button>
-                <button id='AxeButton' onclick="UpgradeAxe()">Upgrade Axe</button>
-                <button id='PickaxeButton' onclick="UpgradePickaxe()">Upgrade Pickaxe</button>
-            </section>
+        
             <div id="CenterWindow">
                 <span>Main Screen</span>
                 <section>Grain: <span id="Grain">0</span></section>

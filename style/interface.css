@@ -13,18 +13,6 @@ table {
     height: auto;
 }
 
-
-td {
-    text-align: center;
-    align-items: center;
-    border-right: solid;
-    border-right-color: gray;
-    border-left: solid;
-    border-left-color: gray;
-    width: auto;
-    height: auto;
-}
-
 #title1 {
     text-align: center;
     font-size: 25px;
