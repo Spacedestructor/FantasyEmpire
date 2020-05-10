@@ -1,0 +1,49 @@
+body {
+    background-color: #191919;
+    color: white;
+    text-align: left;
+}
+
+table {
+    text-align: center;
+    border: 5px solid;
+    border-color: gray;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+#title1 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#title2 {
+    text-align: center;
+    font-size: 25px;
+}
+
+#DevPatreon {
+    color: white;
+}
+
+#build {
+    text-align: center;
+}
+
+ #sessions-block {
+     text-align: center;
+ }
+
+ #Buttons {
+     text-align: center;
+ }
+
+ .Buttons {
+    margin: auto;
+ }
+
+ .CenterWindow {
+    margin: auto;
+    text-align: center;
+ }

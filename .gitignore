@@ -21,23 +21,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-examples/azinc/bundle.min.js
-examples/azinc/index.html
-examples/civclicker/achLocked.jpg
-examples/civclicker/civclicker.css
-examples/civclicker/civclicker.js
-examples/azinc/main.css
-examples/civclicker/constable.jpg
-examples/civclicker/food.png
-examples/civclicker/gold.png
-examples/civclicker/herbs.png
-examples/civclicker/index.html
-examples/civclicker/leather.png
-examples/civclicker/lz-string.js
-examples/civclicker/metal.png
-examples/civclicker/ore.png
-examples/civclicker/piety.png
-examples/civclicker/skins.png
-examples/civclicker/stone.png
-examples/civclicker/wood.png
+.vscode/launch.json
+todo.txt
+FantasyEmpire.code-workspace
 .vscode/launch.json
