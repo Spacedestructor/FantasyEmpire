@@ -23,7 +23,7 @@ table {
     font-size: 25px;
 }
 
-#DevTwitter {
+#DevPatreon {
     color: white;
 }
 
@@ -31,6 +31,19 @@ table {
     text-align: center;
 }
 
-#sessions {
+ #sessions-block {
+     text-align: center;
+ }
+
+ #Buttons {
+     text-align: center;
+ }
+
+ .Buttons {
+    margin: auto;
+ }
+
+ .CenterWindow {
+    margin: auto;
     text-align: center;
-}
+ }
