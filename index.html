@@ -15,131 +15,18 @@
     <script type="text/javascript" src="scripts/training.js"></script>
     <script type="text/javascript" src="scripts/dev.js"></script>
     <section id="title1" onload="launch()">Fantasy Empire is a idle clicker Game</section>
-    <section id="title2">developed by <a id='DevPatreon' href="https://www.patreon.com/spacedestructor"
-            target="_blank">Spacedestructor</a></section>
+    <section id="title2">developed by <a id='DevPatreon' href="https://www.patreon.com/spacedestructor" target="_blank">Spacedestructor</a></section>
     <section id="build">Current Build: <span>"Experimantal 2"</span></section>
     <section id="sessions-block">Sessions: <span id="sessions">0</span></section>
     <section class="Buttons">
         <table>
-            <tr>
-                <td>
-                    Settings Buttons
-                </td>
-                <td>
-                    Ressurce Buttons
-                </td>
-                <td>
-                    Building Buttons
-                </td>
-                <td>
-                    Upgrade Buttons
-                </td>
-                <td>
-                    Population Buttons
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button id='SaveButton' onclick="Save()">Save</button>
-                </td>
-                <td>
-                    <button id="HarvestGrainButton" onclick="HarvestGrain()">Harvest Grain</button>
-                </td>
-                <td>
-                    <button onclick="BuildHouse()">Build House</button>
-                </td>
-                <td>
-                    <button id='SyntheButton' onclick="UpgradeSynthe()">Upgrade Synthe</button>
-                </td>
-                <td>
-                    <button id='FarmerButton' onclick="IncreaseFarmer()">Increase Farmer</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button id='LoadButton' onclick="Load()">Load</button>
-                </td>
-                <td>
-                    <button onclick="CollectWood()">Collect Wood</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    <button id='AxeButton' onclick="UpgradeAxe()">Upgrade Axe</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button id='ResetButton' onclick="Reset()">Reset</button>
-                </td>
-                <td>
-                    <button id="GainStoneButton" onclick="MineStone()">Mine Stone</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    <button id='PickaxeButton' onclick="UpgradePickaxe()">Upgrade Pickaxe</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    <button onclick="MineIron()">Mine Iron</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    Empty
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    <button onclick="MineGold()">Mine Gold</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    Empty
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    <button onclick="MineCoal()">Mine Coal</button>
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    Empty
-                </td>
-                <td>
-                    Empty
-                </td>
-            </tr>
+            <tr><td>Settings Buttons</td><td>Ressurce Buttons</td><td>Building Buttons</td><td>Upgrade Buttons</td><td>Population Buttons</td></tr>
+            <tr><td><button id='SaveButton' onclick="Save()">Save</button></td><td><button id="HarvestGrainButton" onclick="HarvestGrain()">Harvest Grain</button></td><td><button onclick="BuildHouse()">Build House</button></td><td><button id='SyntheButton' onclick="UpgradeSynthe()">Upgrade Synthe</button></td><td><button id='FarmerButton' onclick="IncreaseFarmer()">Increase Farmer</button></td></tr>
+            <tr><td><button id='LoadButton' onclick="Load()">Load</button></td><td><button onclick="CollectWood()">Collect Wood</button></td><td>Empty</td><td><button id='AxeButton' onclick="UpgradeAxe()">Upgrade Axe</button></td><td>Empty</td></tr>
+            <tr><td><button id='ResetButton' onclick="Reset()">Reset</button></td><td><button id="GainStoneButton" onclick="MineStone()">Mine Stone</button></td><td>Empty</td><td><button id='PickaxeButton' onclick="UpgradePickaxe()">Upgrade Pickaxe</button></td><td>Empty</td></tr>
+            <tr><td>Empty</td><td><button onclick="MineIron()">Mine Iron</button></td><td>Empty</td><td>Empty</td><td>Empty</td></tr>
+            <tr><td>Empty</td><td><button onclick="MineGold()">Mine Gold</button></td><td>Empty</td><td>Empty</td><td>Empty</td></tr>
+            <tr><td>Empty</td><td><button onclick="MineCoal()">Mine Coal</button></td><td>Empty</td><td>Empty</td><td>Empty</td></tr>
         </table>
     </section>
     <div class="CenterWindow">
@@ -160,7 +47,8 @@
         <section>Blacksmith: <span id="Blacksmith">0</span> / <span id="MaxBlacksmith">0</span></section>
         <section>Wiseman: <span id="Wiseman">0</span> / <span id="MaxWiseman">0</span></section>
     </div>
-    <div id="console"></div>
+    <div id="PageLog"></div>
+    <script>getElementById("PageLog").innerText = "Test!";</script>
 </body>
 
 </html>
